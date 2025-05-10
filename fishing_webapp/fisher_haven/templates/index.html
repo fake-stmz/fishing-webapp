@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Fisher Haven</title>
+    <!-- Подключение UIKit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="uk-padding">
+        <nav class="uk-navbar-container" uk-navbar>
+            <!-- Логотип -->
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/">Fisher Haven</a>
+            </div>
+            <!-- Меню навигации -->
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/catalogue">Каталог</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Основной контент -->
+    <main class="uk-margin-top">
+        <!-- Приветствие -->
+        <div class="uk-text-center uk-background-cover uk-padding-large uk-background-muted" style="background-image: url('https://images.unsplash.com/photo-1541742425281-c1d3fc8aff96');">
+            <h2 class="uk-light">Добро пожаловать в Fisher Haven!</h2>
+            <p class="uk-light">Ваше идеальное место для рыбалки.</p>
+            <!-- Кнопка перехода в каталог -->
+            <button class="uk-button uk-button-primary uk-margin-top" onclick="location.href='/catalogue'">Перейти в каталог</button>
+        </div>
+        <!-- Блоки с информацией -->
+        <div class="uk-grid uk-child-width-1-1 uk-margin-top" uk-grid>
+            <div>
+                <!-- Блок "О нас" -->
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">О нас</h3>
+                    <p>Fisher Haven - это ваш надежный партнер в мире рыбалки. Мы предлагаем широкий ассортимент товаров для рыболовов всех уровней.</p>
+                </div>
+            </div>
+            <div>
+                <!-- Блок "Наши услуги" -->
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Контакты</h3>
+                    <p>Свяжитесь с нами по телефону: +7 (123) 456-78-90 или по электронной почте: fisherhaven@gmail.com</p>
+                </div>
+            </div>
+    </main>
+    <!-- Подвал -->
+    <footer class="uk-background-secondary uk-light uk-padding uk-text-center uk-margin-top">
+        <p>&copy; 2023 Fisher Haven. Все права защищены.</p>
+    </footer>
+</body>
+</html>

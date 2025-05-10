@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('catalogue/', views.catalogue, name='catalogue'),
+    path('catalogue/delete/<int:item_id>/', views.delete_item, name='delete_item'),
+    path('catalogue/add/', views.add_item, name='add_item'),
 ]
